@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html style="background-color: black">
+<body onLoad="redirect()">
+
+    <p style="color: green; font-family: monospace; font-size: 50px; text-align: center">/********************</p>
+   <p style="color: green; font-family: monospace; font-size: 50px; text-align: center">LOADING PLEASE WAIT...</p>
+   <p style="color: green; font-family: monospace; font-size: 50px; text-align: center">**********************/</p>
+
+   <script>
+      function redirect () {
+         var interval = setInterval(myURL, 10000);
+         var result = document.getElementById("result");
+         result.innerHTML = "<b> The page will redirect after delay of 5 seconds setInterval() method.";
+      }
+
+      function myURL() {
+         document.location.href = "mainpage.html";
+         clearInterval(interval);
+      }
+   </script>
+</body>
+</html>
